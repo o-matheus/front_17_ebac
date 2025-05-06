@@ -6,7 +6,7 @@
 [Aula 3 - Aplique o escaping](#aula-3--aplique-o-escaping)  
 [Aula 4 - Utilize Mixins](#aula-4---utilize-mixins)  
 [Aula 5 - Crie mapas](#aula-5---crie-mapas)  
-[Aula 6](#aula-)  
+[Aula 6 - Finalize o projeto](#aula-6---finalize-o-projeto)  
 
 ## Aula 1 – Conheça o LESS
 
@@ -536,3 +536,68 @@ No início, o uso dos mapas parecia um pouco exagerado. Afinal, com um projeto p
 * Além disso, o acesso por `#colors[backgroundColor]` deixa claro de onde aquela variável vem, reforçando a organização.
 
 > **Comentário pessoal:** Agora entendi melhor por que o LESS torna o acesso às variáveis mais prático e como os mapas ajudam quando o projeto é maior. Embora a sintaxe pareça mais "complicada" no início, ela **facilita muito a manutenção em projetos escaláveis**. Em projetos menores como o nosso, não faria tanta diferença usar mapas, mas entendo que o professor está usando essa oportunidade para ensinar o recurso e mostrar o seu potencial.
+
+
+Perfeito! Aqui está o texto final da aula 6 – **Finalize o Projeto**, no formato corrido como você vinha preferindo, com o título já ajustado para **Antes de Finalizar o Projeto** no último bloco:
+
+---
+
+## Aula 6 - Finalize o Projeto
+
+### Criação dos botões de navegação
+
+Para concluir o projeto, adicionamos links estilizados que redirecionam os usuários para outros projetos que construímos anteriormente. Esses links funcionam como botões e seguem o seguinte padrão de texto: “Visite o projeto 'Nome do Projeto'”.
+
+No meu caso, os projetos escolhidos foram:
+
+* Educa.AI
+* Mabi Viagens
+* Calculadora de Médias
+
+Esses links foram inseridos dentro de uma nova `<ul>` com a classe `.projects-list`, e cada `<li>` recebeu a classe `.projects-list-item`.
+
+### Estilização dos botões
+
+No LESS, foram criados estilos para que esses links tivessem aparência de botões com cantos arredondados e espaçamento entre si. As propriedades aplicadas incluíram:
+
+* `padding: 16px 20px;` para deixar os botões com tamanho confortável;
+* `margin-bottom: 16px;` para espaçar os botões verticalmente;
+* `border-radius: 30px;` para deixar os cantos arredondados;
+* `text-decoration: none;` para remover o sublinhado;
+* `color: white;` para o texto;
+* `background-color: #colors[buttonColor];` puxando do mapa de cores;
+* `transition: all 0.3s ease;` para suavizar as mudanças de estilo no hover.
+
+No efeito de hover, o fundo do botão fica transparente, o texto assume a cor original do botão e é adicionada uma borda colorida para manter a identidade visual mesmo após a transição.
+
+Esses estilos foram aplicados usando o mesmo padrão de estrutura anterior com o uso de `&-item` dentro do seletor `.projects-list`.
+
+### Ajustes no layout geral
+
+O container principal do site também recebeu ajustes importantes:
+
+* `display: flex;`
+* `flex-direction: column;`
+* `justify-content: center;`
+* `height: 100vh;`
+
+Essas configurações alinham os elementos verticalmente, um abaixo do outro, e garantem que o conteúdo ocupe toda a altura da tela.
+
+O `header` teve o `padding` ajustado para `padding-bottom: 24px`, removendo os espaçamentos desnecessários no topo.
+
+---
+
+## Antes de Finalizar o Projeto
+
+Com a estrutura pronta, o professor sugeriu algumas personalizações para tornar o projeto mais realista:
+
+* Substituir o nome fictício e a imagem genérica por informações reais;
+* Adicionar uma descrição pessoal curta;
+* Inserir os links reais para os seus projetos e redes sociais.
+
+### Comentário pessoal
+
+Achei esse projeto muito útil e direto ao ponto. Apesar de simples, ele já funciona como um mini portfólio funcional. Inclusive, posso usá-lo como uma **alternativa personalizada ao Linktree**, principalmente no início da minha jornada como desenvolvedor.
+
+Ao analisar meu Linktree atual (que uso no TikTok), percebi que esse projeto cumpre funções parecidas, mas com muito mais personalidade. Isso me fez considerar usar essa versão como meu **link central de apresentação**, enquanto não finalizo um portfólio mais completo.
+
